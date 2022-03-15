@@ -1,0 +1,187 @@
+.grid{
+    width: 100%;
+    display: block;
+}
+
+.grid.wide{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+.col{
+    padding: 0 12px;
+}
+
+.l-0{
+    display: none;
+}
+
+.l-1{
+    width: 8.33333%;
+}
+
+.l-2{
+    width: 16.66667%;
+}
+
+.l-3{
+    width: 25%;
+}
+
+.l-4{
+    width: 33.33333%
+}
+.l-5{
+    width: 41.66667%;
+}
+
+.l-6{
+    width: 50%;
+}
+.l-7{
+    width: 58.33333%;
+}
+
+.l-8{
+    width: 66.66667%;
+}
+
+.l-9{
+    width: 75%;
+}
+
+.l-10{
+    width: 83.33333%;
+}
+
+.l-11{
+    width: 91.666667%;
+}
+
+.l-12{
+    width: 100%;
+}
+
+
+/* PC resolution */
+@media (min-width: 1024px) and (max-width: 1239px) {
+    .wide {
+        width: 984px;
+    }
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .wide{
+        width: 644px;
+    }
+    .s-0{
+        display: none;
+    }
+    
+    .s-1{
+        width: 8.33333%;
+    }
+    
+    .s-2{
+        width: 16.66667%;
+    }
+    
+    .s-3{
+        width: 25%;
+    }
+    
+    .s-4{
+        width: 33.33333%
+    }
+    .s-5{
+        width: 41.66667%;
+    }
+    
+    .s-6{
+        width: 50%;
+    }
+    .s-7{
+        width: 58.33333%;
+    }
+    
+    .s-8{
+        width: 66.66667%;
+    }
+    
+    .s-9{
+        width: 75%;
+    }
+    
+    .s-10{
+        width: 83.33333%;
+    }
+    
+    .s-11{
+        width: 91.666667%;
+    }
+    
+    .s-12{
+        width: 100%;
+    }
+}
+
+/* Mobile */
+@media (max-width: 739px){
+    .c-0{
+        display: none;
+    }
+    
+    .c-1{
+        width: 8.33333%;
+    }
+    
+    .c-2{
+        width: 16.66667%;
+    }
+    
+    .c-3{
+        width: 25%;
+    }
+    
+    .c-4{
+        width: 33.33333%
+    }
+    .c-5{
+        width: 41.66667%;
+    }
+    
+    .c-6{
+        width: 50%;
+    }
+    .c-7{
+        width: 58.33333%;
+    }
+    
+    .c-8{
+        width: 66.66667%;
+    }
+    
+    .c-9{
+        width: 75%;
+    }
+    
+    .c-10{
+        width: 83.33333%;
+    }
+    
+    .c-11{
+        width: 91.666667%;
+    }
+    
+    .c-12{
+        width: 100%;
+    }
+}

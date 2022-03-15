@@ -1,0 +1,236 @@
+
+/* mobile and tablet */
+@media (max-width: 1024px){
+    .author{
+        display: none;
+    }
+
+    .logo{
+        height: 120px;
+        width: 120%;
+    }
+
+    .toggle{
+        height: 120px;
+    }
+
+    .sidebar-mobile-btn{
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        border: 1px solid white;
+        border-radius: 50%;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .wide{
+        width: 90%;
+    }
+
+    .toggle__mode::after{
+        width: 36px;
+        height: 36px;
+    }
+
+    .toggle__mode{
+        width: 80px;
+        height: 40px;
+        border-radius: 40px;
+    }
+
+    .toggle__mode-icon-night,
+    .toggle__mode-icon-day{
+        width: 40px;
+        height: 40px;
+        font-size: 24px;
+    }
+
+    .toggle__rainy{
+        width: 40px;
+        height: 40px;
+    }
+
+    .toggle__rainy::after{
+        width: 24px;
+        height: 24px;
+    }
+
+    .toggle__rainy-control{
+        top: 50px;
+    }
+
+    .video{
+        width: 170vh;
+    }
+
+    .controls__sidebar-item:not(.active):hover{
+        color: rgba(255,255,255, 0.3);
+        background-color: rgba(0,0,0,.6);
+    }
+
+    .sidebar-mobile{
+        position: fixed;
+        transition: transform ease 0.5s;
+        transform: translateX(-100%);
+        opacity: 0.7;
+        top: 0;
+        left: 0;
+        width: 420px;
+        height: 100vh;
+        background: #070707;
+        z-index: 100;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+    }
+
+    .sidebar-mobile__layout{
+        display: none;
+        position: absolute;
+        z-index: 100;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0,0,0,0.4);
+        animation: fade ease 0.5s;
+    }
+
+    .sidebar-mobile__image{
+        width: 80%;
+    }
+
+    .sidebar-mobile__link{
+        position: relative;
+        color: white;
+        text-decoration: none;
+        font-size: 24px;
+        padding: 20px;
+        display: block;
+        width: 80%;
+        text-align: center;
+    }
+
+    .sidebar-mobile__link span{
+        position: absolute;
+        top: 50%;
+        left: 70%;
+        font-size: 14px;
+        transform: translateY(-50%);
+        padding: 4px 8px;
+        background: rgba(231,43,43,.66);
+        border-radius: 3px;
+    }
+
+    .sidebar-mobile__close{
+        position: absolute;
+        font-size: 40px;
+        right: 20px;
+        top: 20px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .sidebar-mobile__login{
+        padding: 8px 40px;
+        border-radius: 30px;
+        font-size: 24px;
+        outline: none;
+        border: none;
+        background: #f3a952;
+        color: black;
+        margin-top: 20px;
+    }
+
+    .sidebar-mobile__author{
+        margin-top: 60px;
+        display: flex;
+        align-items: center;
+    }
+
+    .sidebar-mobile__author img{
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        margin-left: 10px
+    }
+}
+
+/* mobile */
+@media  (max-width: 739px) {
+    .logo{
+        height: 120px;
+        width: 140%;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .playlist{
+        bottom: 60px;
+    }
+
+    .controls{
+        z-index: 10;
+        right: 0;
+        bottom: 0;
+        top: unset;
+        height: 60px;
+        width: 100%;
+    }
+
+    .controls__sidebar-list{
+        display: flex;
+        width: 100%;
+        position: relative;
+    }
+
+    .controls__sidebar-item{
+        flex: 1;
+        border-radius: 0;
+        position: unset;
+    }
+
+    .controls__sidebar-item:first-child,
+    .controls__sidebar-item:last-child{
+        border-radius: 0;
+    }
+
+    .controls__sidebar-item-content{
+        display: none;
+        cursor: initial;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+        right: unset;
+        top: unset;
+        bottom: 100%;
+        background: #070707;
+        padding: 0 32px;
+        border-radius: 20px 20px 0 0;
+        width: 100vw;
+    }
+
+    .controls__sidebar-item-content-sets{
+        margin-bottom: 16px;
+    }
+
+    .controls__sidebar-item-content{
+        padding: 0 16px;
+    }
+
+    .sidebar-mobile{
+        width: 100vw;
+    }
+
+    .sidebar-mobile__link{
+        padding: 16px;
+        font-size: 20px;
+    }
+}
